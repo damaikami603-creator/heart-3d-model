@@ -1,0 +1,185 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #7b0c0c, #2a0000);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #ffb3b3;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ffdddd;
+  margin-top: 5px;
+}
+
+.branding {
+  position: absolute;
+  bottom: 25px;
+  /* Moved up slightly */
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* Decreased spacing */
+  opacity: 0.8;
+  pointer-events: none;
+  /* Don't interfere with OrbitControls */
+  z-index: 10;
+}
+
+.branding span {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffcccc;
+}
+
+.branding img {
+  height: 24px;
+  width: auto;
+  border: none;
+  outline: none;
+}
+
+/* Viewer rectangle */
+#viewer {
+  width: 100%;
+  max-width: 1000px;
+  /* increased width */
+  height: 600px;
+  /* increased height */
+  margin: 0 auto;
+  border: 3px solid #ff4d4d;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #2a0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Canvas container */
+#canvas-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* WebGL canvas */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Info section */
+.info-box {
+  max-width: 1000px;
+  margin: 20px auto 50px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.info-box h2,
+.info-box h3 {
+  color: #ffcccc;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.info-box p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #ffdddd;
+}
+
+.info-box ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.info-box li {
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  #viewer {
+    height: 450px;
+    /* scale rectangle for tablets */
+  }
+
+  #info {
+    padding: 15px;
+  }
+}
+
+/* Diagram Section */
+#diagram {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  text-align: center;
+}
+
+#diagram h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffcccc;
+}
+
+.diagram-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  border-radius: 20px;
+  border: 3px solid #ff4d4d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* Ensure image corners don't overflow */
+}
+
+.diagram-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  #viewer {
+    height: 350px;
+    /* scale rectangle for mobile */
+  }
+}

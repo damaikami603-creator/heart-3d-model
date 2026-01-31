@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>3D Human Heart</title>
+  <meta name="description" content="Interactive 3D Human Heart model">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Human Heart</h1>
+    <p>Interactive 3D Model</p>
+  </header>
+
+  <!-- 3D Viewer -->
+  <section id="viewer">
+    <div id="canvas-container">
+      <canvas id="heartCanvas"></canvas>
+    </div>
+    <div class="branding">
+      <span>powered by</span>
+      <img src="rahatam_logo.png" alt="Rahatam Logo">
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section id="info" class="info-box">
+    <h2>About the Human Heart</h2>
+
+    <p>
+      The human heart is a muscular organ that works as a pump.
+      It circulates blood throughout the body to supply oxygen
+      and nutrients and to remove waste materials.
+    </p>
+
+    <p>
+      The heart is about the size of a closed fist and is located
+      slightly towards the left side of the chest, between the lungs.
+    </p>
+
+    <h3>Structure of the Heart</h3>
+    <ul>
+      <li>🫀 The heart has four chambers</li>
+      <li>➡️ Two upper chambers: Right Atrium and Left Atrium</li>
+      <li>⬇️ Two lower chambers: Right Ventricle and Left Ventricle</li>
+    </ul>
+
+    <h3>Functions of the Heart</h3>
+    <ul>
+      <li>❤️ Pumps blood continuously throughout life</li>
+      <li>🩸 Supplies oxygen-rich blood to the body</li>
+      <li>🔄 Removes carbon dioxide and other waste materials</li>
+    </ul>
+  </section>
+
+  <!-- Labelled Diagram Section -->
+  <section id="diagram">
+    <h2>Labelled Diagram Of Human Heart</h2>
+    <div class="diagram-container">
+      <img src="heart label.png" alt="Labelled Heart Diagram">
+    </div>
+  </section>
+
+  <!-- Heart Attack Info Section -->
+  <section id="heart-attack" class="info-box">
+    <h2>Heart Attack</h2>
+    <p>
+      A heart attack happens when the blood flow to a part of the heart muscle is suddenly blocked.
+      Because the heart does not get enough oxygen, the muscle begins to get damaged or die if treatment is delayed.
+    </p>
+
+    <h3>Why Does a Heart Attack Occur?</h3>
+    <p>The most common cause is blockage in the coronary arteries, which supply blood to the heart. This blockage
+      usually happens due to:</p>
+    <ul>
+      <li>🔴 Build-up of fat, cholesterol, and plaque inside arteries</li>
+      <li>🩸 Blood clot formation over a plaque</li>
+      <li>📈 High blood pressure damaging artery walls</li>
+      <li>🚬 Smoking, which narrows blood vessels</li>
+      <li>⚖️ Diabetes and obesity</li>
+      <li>🧘 High stress and lack of physical activity</li>
+    </ul>
+
+    <h3>Preventive Measures</h3>
+    <p>Many heart attacks can be prevented by adopting a healthy lifestyle:</p>
+    <ul>
+      <li>🫀 Eat a heart-healthy diet (low fat, low salt, more fruits & vegetables)</li>
+      <li>🏃 Exercise regularly (at least 30 minutes a day)</li>
+      <li>🚭 Avoid smoking and tobacco</li>
+      <li>⚖️ Maintain a healthy weight</li>
+      <li>🧘 Manage stress properly</li>
+      <li>🩺 Control blood pressure, cholesterol, and diabetes</li>
+      <li>😴 Get enough sleep</li>
+    </ul>
+  </section>
+
+  <!-- THREE.JS -->
+  <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
